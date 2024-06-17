@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* font-family: 'Yellowtail', cursive; */
+/* font-family: 'Cinzel', serif; */
+
+
+
+.section11 {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(s-img2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: black; */
+    /* opacity: 0.5; */
+
+
+}
+
+.section11 h1 {
+    color: white;
+    font-size: 100px;
+    position: absolute;
+    left: 200px;
+    top: 350px;
+    font-weight: lighter;
+    font-family: 'Yellowtail', cursive;
+}
+
+.section11 .RB {
+    width: 200px;
+    height: 70px;
+    border: 2px solid white;
+    font-size: 30px;
+    position: absolute;
+    background-color: transparent;
+    color: white;
+    left: 260px;
+    top: 500px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    transition: all 0.2s;
+
+}
+
+.section11 .RB:hover {
+    background-color: orangered;
+    /* color: black; */
+    border: none;
+}
+
+.section_1 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+
+}
+
+.section_1 .logg {
+    font-size: 40px;
+    margin-left: 70px;
+
+
+}
+
+.logg img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav_itmes {
+    width: 400px;
+    height: 100%;
+
+
+}
+
+.nav_itmes ul {
+    position: relative;
+    right: 300px;
+    width: 600px;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    color: black;
+    justify-content: space-evenly;
+}
+
+
+
+.nav_itmes ul li a {
+    width: 0px;
+    font-size: large;
+    font-weight: 100;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    border-color: antiquewhite;
+    margin-left: 40PX;
+}
+
+.nav_itmes ul li a::before {
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    /* width: 100%; */
+    height: 3px;
+    left: -0px;
+    top: 30px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.nav_itmes ul li a::after {
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    /* width: 100%; */
+    height: 2px;
+    right: 0;
+    top: -4px;
+    overflow: hidden;
+    transition: 0.4s;
+
+}
+
+.nav_itmes ul li a:hover::before {
+    width: 100%;
+    /* border-radius: 30px; */
+}
+
+.nav_itmes ul li a:hover::after {
+    width: 100%;
+
+
+}
+
+
+
+/* ----------------------section 2 -----------------------*/
+.section2 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.photos {
+    width: 50%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.photos .img1 {
+    position: relative;
+    left: 30px;
+    top: 50px;
+    width: 500px;
+    height: 350px;
+    /* transition: all 0.5s linear */
+}
+/* .photos .img1:hover{
+    transform: translateY(10px);
+    cursor: pointer;
+} */
+
+.photos .img2 {
+    position: relative;
+    left: 150px;
+    top: -50px;
+    width: 500px;
+    height: 400px;
+}
+
+.content {
+    width: 50%;
+    height: 100vh;
+    /* background-color: yellow; */
+}
+
+.content p {
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    font-family: 'Yellowtail', cursive;
+    color: #C2B280;
+
+}
+
+.content h3 {
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    position: relative;
+
+
+}
+
+.content h3::before {
+    content: " ";
+    position: absolute;
+    left: -180px;
+    top: 30px;
+    width: 150px;
+    height: 1px;
+    background-color: #C2B280;
+}
+
+.p21 {
+    position: relative;
+    top: 100px;
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
+.RB1 {
+    position: relative;
+    top: 200px;
+    left: 150px;
+    width: 200px;
+    height: 50px;
+    border: 2px solid white;
+    font-size: 30px;
+    border: 2px solid;
+    background: transparent;
+    font-family: 'Cinzel', serif;
+
+
+}
+
+.RB1:hover {
+    background-color: orangered;
+    border: none;
+
+}
+
+/* section3----------------------------------------------------------- */
+
+#sec-h3 {
+    position: relative;
+    top: 100px;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    position: relative;
+}
+
+#sec-h3::after {
+    content: " ";
+    position: absolute;
+    /* left: -180px; */
+    right: 180px;
+    top: 30px;
+    width: 150px;
+    height: 1px;
+    background-color: #C2B280;
+
+}
+
+/* section4 manu started/********************************** */
+.sec {
+    width: 100%;
+    height: 100px;
+    font-size: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sec h1 {
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    /* background-color: #C2B280; */
+    position: relative;
+}
+
+.sec h1::before {
+    content: " ";
+    position: absolute;
+    background-color: orange;
+    width: 0;
+    /* width: 100%; */
+    height: 4px;
+    left: -0px;
+    top: 45px;
+    overflow: hidden;
+    transition: 0.4s;
+}
+
+.sec h1:hover::before {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+
+}
+
+.menu_items {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    /* background-color: olive; */
+    overflow: hidden;
+
+}
+
+.menu_items:hover {
+    border: 3px solid orange;
+
+}
+
+.menu_items img {
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+
+.text:hover {
+    opacity: 1;
+}
+
+.text h4 {
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    transition: all 0.6s;
+
+
+
+}
+
+.text p {
+    font-size: 30px;
+    color: orange;
+    transition: all 0.6s;
+}
+
+.text>* {
+    transform: translateY(25px);
+}
+
+.text:hover>* {
+    transform: translateY(0px);
+}
+
+.menu2 {
+    width: 100%;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+.title {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.title h1 {
+    font-size: 50px;
+}
+
+.title h1:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.title p {
+    color: black;
+    font-size: 25px;
+}
+
+.title p:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.list {
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellowgreen; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dinner {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    top: -100px;
+
+    /* background-color: red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.dinner h3 {
+    position: relative;
+    font-size: 30px;
+    left: 300px;
+    font-family: 'Yellowtail', cursive;
+
+}
+
+.dinner pre {
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    font-family: 'Cinzel', serif;
+
+}
+
+.dinner span {
+    color: red;
+}
+
+.breakfast {
+    width: 50%;
+    height: 100vh;
+    position: relative;
+    top: -100px;
+    /* background-color: yellow; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.breakfast h3 {
+    position: relative;
+    font-size: 40px;
+    left: 300px;
+    font-family: 'Yellowtail', cursive;
+
+}
+
+.breakfast pre {
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    font-family: 'Cinzel', serif;
+
+}
+
+.breakfast span {
+    color: red;
+}
+
+.reservtion {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    top: 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50)), url(reservation1.webp);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.reservtion h1 {
+    color: white;
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+
+
+
+}
+
+.form-d {
+    width: 500px;
+    height: 200px;
+
+    position: relative;
+    top: -100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.form-d h2 {
+    position: relative;
+    top: 50px;
+
+}
+
+.form-d table label {
+    text-align: left;
+    width: 300px;
+    height: 100px;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.form-d table input {
+    text-align: left;
+    width: 300px;
+    height: 50px;
+    margin-left: 30px;
+    /* padding: 30px 30px; */
+    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid white;
+}
+
+.form-d select {
+    width: 300px;
+    height: 50px;
+    color: aliceblue;
+    background: transparent;
+}
+
+/* ------------------------------------------------------------------------ */
+.chrf_sec {
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+.ch {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ch h1{
+    font-size: 50px;
+    font-family: 'Cinzel', serif;
+    cursor: pointer;
+}
+.ch h1:hover{
+    color: orange;
+}
+.ch p{
+    color: orange;
+    font-size: 20px;
+}
+.ch p:hover{
+    color: black;
+}
+.cp{
+    width: 100%;
+    height: 100%;
+    background-color: #C2B280;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cp .c{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+
+.c img {
+    width: 100%;
+    height: 100%;
+}
+
+.m {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    opacity: 0;
+    transition: all 0.4s;
+    cursor: pointer;
+
+}
+.m h4{
+    font-size: 30px;
+}
+.m:hover {
+    opacity: 1;
+}
+
+.text h4 {
+    font-size: 30px;
+    font-family: 'Cinzel', serif;
+    transition: all 0.6s;
+
+
+
+}
+
+.m p {
+    font-size: 30px;
+    color: orange;
+    transition: all 0.6s;
+}
+
+.m>* {
+    transform: translateY(25px);
+}
+
+.m:hover>* {
+    transform: translateY(0px);
+}
+
+
+
+/* -------------------------- */
+.footer {
+    position: relative;
+    top: 10px;
+    width: 100%;
+    height: 110vh;
+    background-color: #FAE5D3;
+
+}
+
+.map {
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.imgs {
+    position: relative;
+    /* top: -100px; */
+    /* background-color: #C2B280; */
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.map .in-img {
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+
+
+}
+
+.map .in-img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s linear;
+    cursor: pointer;
+}
+
+.map .in-img img:hover {
+    transform: scale(1.2);
+}
+
+.detalis {
+    width: 100%;
+    height: 420px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+
+}
+
+.nav_menu {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+
+}
+
+.nav_menu a:hover {
+    color: orange;
+}
+
+.social {
+    width: 300px;
+    height: 60px;
+    font-size: 20px;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #C2B280;
+    background: transparent;
+    border: 2px solid #C2B280;
+    cursor: pointer;
+    transition: all 0.4s;
+
+}
+
+.social:hover {
+    background-color: orange;
+    border: none;
+    color: black;
+}
+
+.medias {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.medias i {
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 40px;
+
+}
+
+.medias i:hover {
+    color: orange;
+}
+
+.sub {
+    /* background-color: #C2B280; */
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub input {
+    width: 300px;
+    height: 50px;
+    padding: 0 50px;
+
+}
+
+.sbto {
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: #C2B280;
+    color: black;
+}
+
+.sbto:hover {
+    background-color: orange;
+    color: black;
+}
+
+.copyr {
+    position: relative;
+    top: -30px;
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #616A6B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}

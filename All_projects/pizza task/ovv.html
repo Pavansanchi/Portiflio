@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>combinator</title>
+    <style>
+        .one img{
+            width: 300px;
+            height: 300px;
+            margin-left: 150px;
+        }
+        .two img{
+            width: 200px;
+            height: 100px;
+            margin-left: 150px;
+        }
+        /* ............ */
+        .child>p{
+            color: blueviolet;
+        }
+        /* ........ */
+         h1+h2{
+            color: blueviolet;
+        }
+
+        /* ....... */
+
+        h1~h4{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>i.Descendant selector(space):</p>
+    <div class="one">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+    </div>
+    <div class="two">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKcpXp5SGGWDp8_FeLL-_8pu-qmEeY2xWsSg&usqp=CAU" alt="">
+    </div>
+    <hr><hr>
+    <p>ii.child selector(>):</p>
+    <div class="child">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, obcaecati! Ad, saepe eaque? Autem quo optio odit a! Corrupti, delectus.</p>
+        <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, repellat rem tenetur ipsam necessitatibus a corporis suscipit minus quaerat harum!</h5>
+        <p>Lorem, ipsum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+    </div>
+    <hr><hr>
+
+<p> iii. Adjacent sibling selector(+) :</p>
+
+    <div class="p">
+        <h1>Pavan</h1>
+        <h2>Nandini</h2>
+    </div>
+<hr><hr>
+    <p>iv. General sibling selector(~):</p>
+    <h1>Pavan</h1>
+    <h2>Nandini</h2>
+    <h3>mohan</h3>
+    <h4>rakesh</h4>
+    <h5>sugithi</h5>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* $bg: #1d1f20;
+        $text-color: #d7b94c;
+        $caret-color: white;
+        $text-length: 16;
+        $animation-time: 4s; */
+
+        /* // Center content */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: black;
+        }
+
+        /* // Basic style */
+        h1 {
+            font-family: 'Inconsolata', Consolas, monospace;
+            font-size: 4em;
+            color: orange;
+        }
+
+        /* // Typing style */
+        .typing {
+            position: relative;
+
+            &::after{
+
+                content: "|";
+                position: absolute;
+                right: 0;
+                width: 100%;
+                color: white;
+                background: black;
+                animation: typing 4s  steps(200,end) forwards,
+                    caret 1s infinite ;
+            }
+               
+            
+        }
+
+        /* // Animation */
+        @keyframes typing {
+            to {
+                width: 0
+            }
+        }
+
+        @keyframes caret {
+            50% {
+                color: transparent
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="typing">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis optio maiores tempore rerum ab voluptates hic officiis non, eaque quae alias quaerat inventore magni vero impedit culpa et odio. Est?</h1>
+</body>
+
+</html>

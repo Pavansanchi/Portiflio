@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100%;
+            height: 100vh;
+            background-color: aliceblue;
+        }
+
+        .cp1 {
+            width: 210px;
+            height: 150px;
+            background-color: #3498DB;
+            position: absolute;
+            z-index: 2;
+            top: 200px;
+            left: 350px;
+            /* border-top-left-radius: 30%; */
+            border-bottom-left-radius: 10%;
+
+
+
+        }
+
+        .cp11 {
+            width: 350px;
+            height: 150px;
+            background-color: #3498DB;
+            position: absolute;
+            z-index: 2;
+            top: 200px;
+            left: 800px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 10%;
+
+        }
+
+        .cp2 {
+            width: 0;
+            height: 0;
+            position: absolute;
+            z-index: 2;
+            border: 100px solid;
+            border-color: transparent transparent #3498DB transparent;
+            top:01px;
+            left: 450px;
+        }
+
+        .cp22 {
+            width: 0;
+            height: 0;
+            position: absolute;
+            z-index: 2;
+            border: 100px solid;
+            border-color: transparent transparent #3498DB transparent;
+            top: 01px;
+            left: 747px;
+        }
+
+        .cp3 {
+            width: 296px;
+            height: 250px;
+            background-color: #3498DB;
+            position: absolute;
+            z-index: 2;
+            top: 100px;
+            left: 550px;
+            display: flex;
+
+        }
+
+        .winds {
+            width: 150px;
+            height: 60px;
+            /* box-shadow: 1px -1px 5px inset; */
+            border: solid wheat;
+            border-radius: 20%;
+            background-color: aliceblue;
+            margin-left: 30px;
+            margin-top: 50px;
+            overflow: hidden;
+            position: relative;
+        } img{
+            width: 190px;
+            height: 100px;
+            /* padding-left: 30px; */
+        }
+
+        .divider {
+            width: 100%;
+            height: 90px;
+            position: relative;
+            top: 350px;
+            z-index: 1;
+            background-color: black;
+        }
+
+
+        .wheels {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            background-color: aliceblue;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .wheel-1 {
+
+            position: relative;
+            top: 290px;
+            left: 460px;
+            z-index: 3;
+        }
+
+        .wheel-2 {
+
+            position: relative;
+            top: 90px;
+            left: 790px;
+            z-index: 3;
+        }
+
+        .TR {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            top: -10px;
+            border-radius: 50%;
+            background-color: black;
+        }
+
+        .ITR {
+            overflow: hidden;
+
+            width: 100px;
+            height: 100px;
+            background-color: #D0D3D4;
+            border-radius: 50%;
+
+            animation: wheelrot linear 2s infinite;
+        }
+
+        @keyframes wheelrot {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+
+
+        }
+
+        .brs {
+            width: 70px;
+            height: 40px;
+            border-top-right-radius: 50%;
+            border-bottom-right-radius: 50%;
+            background-color: black;
+            position: relative;
+
+
+        }
+
+        .br1 {
+            top: 40px;
+            left: -35px;
+            transform: rotate(-10deg);
+        }
+
+        .br2 {
+            top: -60px;
+            left: 30px;
+            transform: rotate(109deg);
+
+        }
+
+        .br3 {
+            left: 50px;
+            top: -9px;
+            transform: rotate(-120deg);
+
+        }
+
+        .cr {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            position: absolute;
+            border-radius: 50%;
+            z-index: 20;
+            top: 65px;
+            left: 65px;
+
+        }
+
+        .road {
+            width: 100%;
+            height: 20px;
+            position: relative;
+            top: 50px;
+            z-index: 8;
+            background-color: black;
+        }
+
+        .bar {
+            width: 60px;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            background-color: white;
+            animation: barmove linear 3s infinite;
+
+        }
+       
+
+        @keyframes barmove {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-2000px);
+            }
+
+
+        }
+
+        .bs {
+            width: 100px;
+            height: 70px;
+            position: absolute;
+            top: 130px;
+            left: 320px;
+            background-color: #3498DB;
+            clip-path: polygon(49% 54%, 70% 58%, 82% 64%, 79% 75%, 59% 80%, 61% 100%, 37% 100%, 45% 75%, 23% 68%, 19% 47%);
+
+        }
+
+        .ligthf {
+            width: 110px;
+            height: 120px;
+            position: absolute;
+            background-color: yellow;
+            z-index: 10;
+            clip-path: ellipse(25% 13% at 50% 50%);
+            top: 198px;
+            left: 1072px;
+            transform: rotate(50deg);
+        }
+
+        .ligthb {
+            width: 30px;
+            height: 40px;
+            background-color: red;
+            position: absolute;
+            box-shadow: 2px 2px 3px;
+            border-top-right-radius: 20%;
+            border-bottom-right-radius: 20%;
+            left: 350px;
+            top: 230px;
+            z-index: 10;
+
+
+        }
+
+        .LTS {
+            width: 100%;
+            height: 3px;
+            margin-top: 13px;
+            background-color: wheat;
+        }
+
+        .LT-2 {
+            margin-top: 11px;
+            background-color: wheat;
+        }
+        .car{
+            position: relative;
+            z-index: 5;
+            /* background-color: aqua; */
+            animation: car 10s infinite linear;
+        }
+        @keyframes car {
+            0%{
+               transform: translateX(-500px); 
+            }
+           100%{
+               transform: translateX(500px); 
+            }
+
+
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="divider">
+            <div class="bar1 bar"></div>
+        </div>
+        <div class="car">
+            <div class="ligthb">
+                <div class="LTS LT-1"></div>
+                <div class="LTS LT-2"></div>
+            </div>
+            <div class="ligthf"></div>
+            <div class="bs"></div>
+            <div class="cp1"></div>
+            <div class="cp11"></div>
+            <div class="cp2"></div>
+            <div class="cp22"></div>
+    
+            <div class="cp3">
+                <div class="winds"></div>
+                <div class="winds wn-1"><img src="dv1.jpeg" alt=""></div>
+            </div>
+    
+            <div class="wheel-1 wheels">
+                <div class="TR">
+                    <div class="ITR">
+    
+                        <div class="br1 brs"></div>
+                        <div class="br2 brs"></div>
+                        <div class="br3 brs"></div>
+                        <div class="cr"></div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="wheel-2 wheels">
+                <div class="TR">
+                    <div class="ITR">
+                        <div class="br1 brs"></div>
+                        <div class="br2 brs"></div>
+                        <div class="br3 brs"></div>
+    
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+
+
+
+        <div class="road"></div>
+    </div>
+</body>
+
+</html>
